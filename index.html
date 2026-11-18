@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEXA_eg | Heavyweight Streetwear</title>
+    
+    <!-- مكتبة الأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ملف الـ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- القائمة الجانبية المخفية افتراضياً -->
+<div id="side-menu" class="side-menu">
+    <div class="menu-header">
+        <h3>VEXA_eg Menu</h3>
+        <button id="close-menu" class="close-btn">&times;</button>
+    </div>
+    <ul class="menu-links">
+        <li><a href="#new-arrivals">🔥 أحدث الإصدارات (New Arrivals)</a></li>
+        <li><a href="#hoodies">  •(Hoodies)</a></li>
+        <li><a href="#tees">  •(Tees)</a></li>
+        <li><a href="#pants">  •(Pants)</a></li>
+        <li><a href="#shorts">  •(Shorts)</a></li>
+        <li><a href="#sale">⚡ العروض والخصومات (Sale)</a></li>
+    </ul>
+</div>
+
+
+    <!-- الهيدر -->
+    <header class="navbar">
+        <div class="nav-icon-group right-icons">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="logo">VEXA_eg</div>
+
+        <div class="nav-icon-group left-icons">
+            <i class="fa-regular fa-user"></i>
+            <div class="cart-icon" onclick="document.getElementById('cartModal').style.display='flex'">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span class="cart-count">0</span>
+</div>
+
+                
+                
+            
+        </div>
+    </header>
+
+    <!-- البانر الرئيسي (ستايل Mavin) -->
+<section class="hero-banner">
+    <div class="hero-overlay">
+        <!-- كلمة LIVE NOW في الأعلى -->
+        <span class="hero-top-text">LIVE NOW</span>
+
+        <!-- زرار Shop Now في الأسفل -->
+        <div class="hero-bottom">
+            <a href="#products" class="btn-shop-now">SHOP NOW</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- 1. قسم الأقسام بصور خلفية بدلاً من النص -->
+    <section id="categories" class="categories">
+        <h2 class="section-title">SHOP BY CATEGORY</h2>
+        <div class="category-grid">
+            
+            <!-- كارت قسم 1 -->
+            <div class="category-card cat-1">
+                <div class="category-overlay">
+                    <h3>TOPS & TEES</h3>
+                    <a href="#products" class="cat-btn">SHOP NOW</a>
+                </div>
+            </div>
+
+            <!-- كارت قسم 2 -->
+            <div class="category-card cat-2">
+                <div class="category-overlay">
+                    <h3>HOODIES & SWEATSHIRTS</h3>
+                    <a href="#products" class="cat-btn">SHOP NOW</a>
+                </div>
+            </div>
+
+            <!-- كارت قسم 3 -->
+            <div class="category-card cat-3">
+                <div class="category-overlay">
+                    <h3>BOTTOMS & PANTS</h3>
+                    <a href="#products" class="cat-btn">SHOP NOW</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- FEATURED COLLECTIONS SECTION -->
+<section class="featured-collections">
+    <h2 class="section-title2">FEATURED COLLECTIONS</h2>
+    
+    <div class="collections-slider">
+        <!-- كوليكشن 1 -->
+        <div class="collection-card">
+            <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=800" alt="Men's New Arrivals">
+            <div class="collection-title">MEN'S NEW ARRIVALS</div>
+        </div>
+
+        <!-- كوليكشن 2 -->
+        <div class="collection-card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600" alt="T-Shirts">
+            <div class="collection-title">T-SHIRTS</div>
+        </div>
+
+        <!-- كوليكشن 3 -->
+        <div class="collection-card">
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600" alt="Compressions">
+            <div class="collection-title">COMPRESSIONS</div>
+        </div>
+
+        <!-- كوليكشن 4 -->
+        <div class="collection-card">
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=600" alt="Jerseys">
+            <div class="collection-title">JERSEYS</div>
+        </div>
+
+        <!-- كوليكشن 5 -->
+        <div class="collection-card">
+            <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=800" alt="Sweatpants">
+            <div class="collection-title">SWEATPANTS</div>
+        </div>
+    </div>
+</section>
+
+    <!-- 2. عرض المنتجات (2 منتج جنب بعض زي Mavin) -->
+    <section id="products" class="products">
+        <h2 class="section-title">NEW ARRIVALS</h2>
+        <div class="product-grid">
+
+            <!-- منتج 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80
+
+" alt="Boxy Fit Tee">
+                </div>
+                <div class="product-info">
+                    <h3>hody</h3>
+                  <div>
+  <s class="price">LE 690.00</s> <p class="price">LE 480.00</p>
+                  </div>
+                  
+                     <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 8px;">
+    <button onclick="updateQty('hody', 480, -1, 'qty-1')" style="padding: 2px 8px; background: #ddd; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">-</button>
+    <span id="qty-1" style="font-size: 13px; font-weight: bold; min-width: 15px; text-align: center;">0</span>
+    <button onclick="updateQty('hody', 480, 1, 'qty-1')" style="padding: 2px 8px; background: #111; color: #fff; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">+</button>
+</div>
+
+                    
+                </div>
+            </div>
+
+            <!-- منتج 2 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80
+" alt="Oversized Hoodie">
+                </div>
+                <div class="product-info">
+                    <h3>box fit</h3>
+                    <s class="price">LE 800.00</s>
+                    <p class="price">LE 450.00</p>           
+                  
+                </div>
+
+    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 8px;">
+    <button onclick="updateQty('box fit', 450, -1, 'qty-2')" style="padding: 2px 8px; background: #ddd; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">-</button>
+    <span id="qty-2" style="font-size: 13px; font-weight: bold; min-width: 15px; text-align: center;">0</span>
+    <button onclick="updateQty('box fit', 450, 1, 'qty-2')" style="padding: 2px 8px; background: #111; color: #fff; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">+</button>
+</div>
+
+              
+            </div>
+
+          <!-- منتج 3 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80
+" alt="Boxy Fit Tee">
+                </div>
+                <div class="product-info">
+                    <h3>Heavyweight</h3>
+                    <s class="price">LE 750.00</s>
+                    <p class="price">LE 420.00</p>
+           
+                </div>
+
+               <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px;">
+            <button onclick="updateQty('Heavyweight', 420, -1, 'qty-3')" style="padding: 2px 8px; background: #ddd; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">-</button>
+            <span id="qty-3" style="font-size: 13px; font-weight: bold;">0</span>
+            <button onclick="updateQty('Heavyweight', 420, 1, 'qty-3')" style="padding: 2px 8px; background: #111; color: #fff; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">+</button>
+               </div>
+            </div>
+
+          <!-- منتج 4 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80
+" alt="Boxy Fit Tee">
+                </div>
+                <div class="product-info">
+                    <h3>bentalone</h3>
+                    <s class="price">LE 800.00</s>
+                    <p class="price">LE 470.00</p>
+                         
+                </div>
+
+               <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px;">
+            <button onclick="updateQty('bentalone', 470, -1, 'qty-4')" style="padding: 2px 8px; background: #ddd; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">-</button>
+            <span id="qty-4" style="font-size: 13px; font-weight: bold;">0</span>
+            <button onclick="updateQty('bentalone', 470, 1, 'qty-4')" style="padding: 2px 8px; background: #111; color: #fff; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">+</button>
+               </div>
+            </div>
+
+          <!-- منتج 5 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80" alt="Boxy Fit Tee">
+                </div>
+                <div class="product-info">
+                    <h3>teshert</h3>
+                    <s class="price">LE 600.00</s>
+                    <p class="price">LE 460.00</p>
+                        
+                </div>
+
+               <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px;">
+            <button onclick="updateQty('teshert', 460, -1, 'qty-5')" style="padding: 2px 8px; background: #ddd; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">-</button>
+            <span id="qty-5" style="font-size: 13px; font-weight: bold;">0</span>
+            <button onclick="updateQty('teshert', 460, 1, 'qty-5')" style="padding: 2px 8px; background: #111; color: #fff; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">+</button>
+               </div>
+            </div>
+
+          <!-- منتج 6 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80" alt="Boxy Fit Tee">
+                </div>
+                <div class="product-info">
+                    <h3>shoze</h3>
+                    <s class="price">LE 550.00</s>
+                    <p class="price">LE 350.00</p>
+                    
+                </div>
+
+               <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px;">
+            <button onclick="updateQty('shoze', 350, -1, 'qty-6')" style="padding: 2px 8px; background: #ddd; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">-</button>
+            <span id="qty-6" style="font-size: 13px; font-weight: bold;">0</span>
+            <button onclick="updateQty('shoze', 350, 1, 'qty-6')" style="padding: 2px 8px; background: #111; color: #fff; border: none; cursor: pointer; border-radius: 4px; font-weight: bold;">+</button>
+               </div>
+            </div>
+<a href="https://wa.me/01024762467?text=مرحباً%20VEXA،%20عايز%20أستفسر%20عن%20منتج" target="_blank" class="whatsapp-btn">
+    <button style="background-color: #25D366; color: white; padding: 10px 10px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;margin: 10px auto;">
+        Order via WhatsApp 
+    </button>
+</a>
+
+
+        </div>
+      
+    </section>
+
+    <footer>
+        <p>&copy; 2026 <strong>VEXA_eg</strong>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+   <!-- نافذة السلة الاحترافية -->
+<div class="modal" id="cartModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: center;">
+    <div style="background: #fff; width: 90%; max-width: 400px; padding: 20px; border-radius: 8px; position: relative; max-height: 80vh; overflow-y: auto;">
+        <span onclick="document.getElementById('cartModal').style.display='none'" style="position: absolute; top: 12px; right: 15px; font-size: 22px; cursor: pointer; font-weight: bold;">&times;</span>
+        <h3 style="font-size: 16px; font-weight: 800; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 8px;">سلة المشتريات (Cart)</h3>
+        
+        <!-- هنا بينزل لستة المنتجات بالـ JavaScript -->
+        <div id="cartItemsList">
+            <p style="text-align: center; color: #777; padding: 20px 0; font-size: 13px;">السلة فاضية حالياً</p>
+        </div>
+
+        <div id="cartTotal" style="margin-top: 15px; font-weight: 800; font-size: 15px; text-align: right;">Total: LE 0</div>
+        <!-- خانات بيانات العميل -->
+<div style="margin: 10px 0; display: flex; flex-direction: column; gap: 8px;">
+    <input type="text" id="customerName" placeholder="اسم العميل الثلاثي" style="padding: 8px; border: 1px solid #ddd; border-radius: 5px; font-size: 13px;">
+    <input type="text" id="customerPhone" placeholder="رقم الهاتف للتواصل" style="padding: 8px; border: 1px solid #ddd; border-radius: 5px; font-size: 13px;">
+    <input type="text" id="customerAddress" placeholder="العنوان بالتفصيل (المدينة/الشارع)" style="padding: 8px; border: 1px solid #ddd; border-radius: 5px; font-size: 13px;">
+</div>
+
+        <button onclick="checkoutWhatsApp()" style="width: 100%; margin-top: 15px; background: #25D366; color: #fff; border: none; padding: 12px; border-radius: 5px; font-weight: bold; font-size: 14px; cursor: pointer;">
+            <i class="fa-brands fa-whatsapp"></i> اطلب الأوردر عبر الواتساب
+        </button>
+    </div>
+</div>
+
+  
+</body>
+        </html>
+                              
