@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-icon-group {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-icon-group i {
+    font-size: 20px;
+    color: #111111;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner {
+    width: 100%;
+    height: 380px; /* طول البانر عشان يظهر صورة الموديل كاملة */
+    background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=1000'); /* حط رابط صورتك هنا بعدين */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35); /* تغميق خفيفة جداً عشان الكتابة تبان */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* بتوزع العناصر: واحدة فوق خالص والتانية تحت خالص */
+    align-items: center;
+    padding: 25px 20px;
+}
+
+/* تنسيق كلمة LIVE NOW في الأعلى */
+.hero-top-text {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+        display: flex;
+    align-items: center;
+    gap: 15px; /* المسافة بين الخط والكلام */
+}
+
+/* عمل الخط اللي على اليمين والشمال تلقائياً */
+.hero-top-text::before,
+.hero-top-text::after {
+    content: "";
+    height: 1px;
+    width: 40px; /* طول الخط، تقدر تزوده أو تققله براحتك */
+    background-color: #ffffff;
+}
+
+/* تنسيق زرار Shop Now في الأسفل */
+.hero-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.btn-shop-now {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-shop-now:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+
+/* Categories Section (مربعات الصور زي Mavin) */
+.categories, .products {
+    padding: 35px 15px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* كارت القسم */
+.category-card {
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* صور مؤقتة للأقسام (تقدر تغير الروابط دي بصوركم بعدين) */
+.cat-1 { background-image: url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600'); }
+.cat-2 { background-image: url('https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=600'); }
+.cat-3 { background-image: url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=600'); }
+
+.category-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.category-overlay h3 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.cat-btn {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Product Grid (منتجات جنب بعضها) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* خليهم 2 جنب بعض على الموبايل */
+    gap: 12px;
+}
+
+.product-card {
+    background: #fff;
+    text-align: center;
+}
+
+.product-img img {
+    width: 100%;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.product-info h3 {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 8px 0 4px;
+}
+
+.price {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.btn-whatsapp {
+    width: 100%;
+    padding: 8px 4px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+    color: #777;
+}
+/* FEATURED COLLECTIONS SLIDER */
+.featured-collections {
+    padding: 30px 0 30px 15px; /* مسافة بسيطة من اليمين للشمال */
+}
+
+.featured-collections .section-title {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    padding-right: 15px;
+}
+
+/* الحاوية اللي بتخلي الكروت تتسحب يمين وشمال */
+.collections-slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* يسمح بالسحب الأفقي */
+    scroll-snap-type: x mandatory; /* يخلي السلايد يثبت على كل كارت بالظبط */
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* إخفاء شريط التمرير (Scrollbar) لشكل أنظف */
+.collections-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* كارت الكوليكشن */
+.collection-card {
+    flex: 0 0 78%; /* حجم الكارت على الموبايل عشان يظهر حتة من الكارت اللي بعده */
+    height: 380px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    background-color: #111;
+}
+
+.collection-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.9;
+}
+
+/* عنوان الكوليكشن المكتوب أبيض من تحت على الصورة */
+.collection-title {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    text-transform: uppercase;
+}
+.section-title2{
+  text-align: left; /* بدلها من right لـ left عشان تروح الشمال */
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    padding-left: 15px; /* نقلنا الحشو للشمال */
+    padding-right: 0;
+  }
+
+/* تصميم القائمة الجانبية */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -280px; /* مخفية بره الشاشة من الناحية اليمين */
+    width: 280px;
+    height: 100%;
+    background-color: #111;
+    color: #fff;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+}
+
+/* الكلاس اللي هيشغلها ويظهرها */
+.side-menu.active {
+    right: 0;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-links li {
+    margin-bottom: 15px;
+}
+
+.menu-links li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    transition: 0.2s;
+}
+
+.menu-links li a:hover {
+    color: #25D366;
+    padding-right: 5px;
+}
+
+/* تنسيق نافذة السلة الجانبية أو المنبثقة */
+.cart-modal {
+    display: none; /* مخفية افتراضياً */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* تنسيق عام لمحتوى السلة داخل المودال */
+#cart-modal {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#cart-modal > div {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    direction: rtl;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.close-btn {
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-items {
+    max-height: 250px;
+    overflow-y: auto;
+    margin: 15px 0;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+}
+
+.cart-total {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+      }
+  
