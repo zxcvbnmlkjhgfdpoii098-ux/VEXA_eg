@@ -261,6 +261,7 @@ footer {
 /* الحاوية اللي بتخلي الكروت تتسحب يمين وشمال */
 .collections-slider {
     display: flex;
+    direction: ltr;
     gap: 15px;
     overflow-x: auto; /* يسمح بالسحب الأفقي */
     scroll-snap-type: x mandatory; /* يخلي السلايد يثبت على كل كارت بالظبط */
