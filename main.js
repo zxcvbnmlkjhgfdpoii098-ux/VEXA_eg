@@ -151,6 +151,38 @@ function checkoutWhatsApp() {
     window.open(whatsappUrl, '_blank');
 }
 
+const searchBtn = document.getElementById("searchBtn");
+const searchBarBox = document.getElementById("searchBarBox");
+const searchInput = document.getElementById("searchInput");
+const closeSearchBtn = document.getElementById("closeSearchBtn");
+
+if (searchBtn && searchBarBox && searchInput) {
+  searchBtn.addEventListener("click", () => {
+    const isHidden = searchBarBox.style.display === "none" || !searchBarBox.style.display;
+    searchBarBox.style.display = isHidden ? "flex" : "none";
+    if (isHidden) {
+      searchInput.focus();
+    }
+  });
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim().toLowerCase();
+    const cards = document.querySelectorAll(".product-card, .product-info");
+
+    cards.forEach((card) => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(query) ? "" : "none";
+    });
+  });
+}
+
+if (closeSearchBtn && searchBarBox && searchInput) {
+  closeSearchBtn.addEventListener("click", () => {
+    searchBarBox.style.display = "none";
+    searchInput.value = "";
+    searchInput.dispatchEvent(new Event("input"));
+  });
+}
 
 
 
