@@ -34,7 +34,7 @@
     <header class="navbar">
         <div class="nav-icon-group right-icons">
             <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i id="searchBtn" class="fa-solid fa-magnifying-glass"></i>
         </div>
 
         <div class="logo">VEXA_eg</div>
@@ -51,6 +51,11 @@
             
         </div>
     </header>
+<div id="searchBarBox" class="search-bar-box" style="display: none;">
+  <input type="text" id="searchInput" placeholder="search 🔍" autocomplete="off" />
+  <button type="button" id="closeSearchBtn" aria-label="Close search">✕</button>
+</div>
+
 
     <!-- البانر الرئيسي (ستايل Mavin) -->
 <section class="hero-banner">
